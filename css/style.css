@@ -39,8 +39,6 @@ The designs were created to the following widths:
 - Weights: 400
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
-
-
 */
 
 :root {
@@ -68,9 +66,12 @@ The designs were created to the following widths:
 }
 
 body {
-  line-height: 1.5;
+  min-height: 100vh;
+  line-height: 1.7;
+  font-family: var(--ff-primary);
   font-size: 0.9375rem; /* 15px */
-  /* color: var(--clr-n-white); */
+  background: var(--clr-p-very-dark-blue);
+  color: var(--clr-n-white);
 }
 
 img,
@@ -97,4 +98,75 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.word-purple {
+  color: var(--clr-p-soft-violet);
+}
+
+.card {
+  background: var(--clr-p-soft-violet);
+  width: 20.4375rem;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__content {
+  background: var(--clr-p-dark-desat-blue);
+  text-align: center;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 2rem 1.97rem 2.2rem;
+  max-width: 35ch;
+}
+
+.card__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  color: var(--clr-n-transparent-white-075);
+  margin-bottom: 2rem;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card__list__stat__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card__list__stat {
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-family: var(--ff-secondary);
+  font-size: 0.75rem;
+  color: var(--clr-n-transparent-white-060);
+}
+
+.card__image {
+  mix-blend-mode: multiply;
+  opacity: 0.7;
 }
