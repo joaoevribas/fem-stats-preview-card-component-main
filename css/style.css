@@ -1,46 +1,3 @@
-/* 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
-
-## Colors
-
-### Primary
-
-- Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%)
-
-### Neutral
-
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700
-
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
-*/
-
 :root {
   --clr-p-very-dark-blue: hsl(233, 47%, 7%);
   --clr-p-dark-desat-blue: hsl(244, 38%, 16%);
@@ -130,7 +87,6 @@ ul {
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 2rem 1.97rem 2.2rem;
   max-width: 35ch;
 }
@@ -169,4 +125,36 @@ ul {
 .card__image {
   mix-blend-mode: multiply;
   opacity: 0.7;
+}
+
+/* Desktop */
+@media (min-width: 67.1875rem) {
+  /* 1075px */
+  .card {
+    width: 69.375rem;
+    display: grid;
+    grid-template-columns: 1fr 33.75rem;
+  }
+
+  .card__content {
+    text-align: left;
+    max-width: 100%;
+    padding: 4.35rem 5.9375rem 4.4375rem 3.6875rem;
+  }
+
+  .card__title {
+    font-size: 2.25rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  .card__text {
+    margin-bottom: 3.5rem;
+    max-width: 40ch;
+  }
+
+  .card__list {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3.875rem;
+  }
 }
