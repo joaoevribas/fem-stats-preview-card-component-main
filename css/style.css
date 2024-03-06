@@ -74,7 +74,7 @@ ul {
 
 .card {
   background: var(--clr-p-soft-violet);
-  width: 20.4375rem;
+  max-width: 20.4375rem;
   display: flex;
   flex-direction: column-reverse;
   border-radius: 0.5rem;
@@ -109,6 +109,12 @@ ul {
   gap: 1.2rem;
 }
 
+.card__list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
 .card__list__stat__heading {
   font-size: 1.5rem;
   font-weight: 700;
@@ -131,7 +137,7 @@ ul {
 @media (min-width: 67.1875rem) {
   /* 1075px */
   .card {
-    width: 69.375rem;
+    max-width: 69.375rem;
     display: grid;
     grid-template-columns: 1fr 33.75rem;
   }
@@ -139,7 +145,7 @@ ul {
   .card__content {
     text-align: left;
     max-width: 100%;
-    padding: 4.35rem 5.9375rem 4.4375rem 3.6875rem;
+    padding: 4.35rem 5.9375rem 4rem 3.6875rem;
   }
 
   .card__title {
